@@ -128,6 +128,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/init.bullhead.sh:system/bin/init.bullhead.sh
 
+PRODUCT_COPY_FILES += \
+    device/lge/bullhead/bootanimation.zip:system/media/bootanimation.zip
+
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 PRODUCT_AAPT_CONFIG := normal
