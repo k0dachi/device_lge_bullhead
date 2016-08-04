@@ -16,7 +16,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+KERNEL_DEFCONFIG := bullhead-debug_defconfig
+else
 KERNEL_DEFCONFIG := bullhead_defconfig
+endif
 KERNEL_DIR := kernel/lge/bullhead
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
